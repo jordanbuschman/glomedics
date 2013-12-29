@@ -1,3 +1,5 @@
+#!/usr/bin/perl
+
 use lib "~/Library/WebServer/Documents/glomedics";
 use GlomedicsApp;
 
@@ -8,7 +10,6 @@ my $glomedics = GlomedicsApp->new(
 			PRE_PROCESS => 'header.html',
 			POST_PROCESS => 'footer.html',
 		},
-		hw_string => "Hello world!",
 	},
 );
 
