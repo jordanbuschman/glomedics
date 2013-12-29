@@ -1,3 +1,4 @@
+use lib "~/Library/WebServer/Documents/glomedics";
 use GlomedicsApp;
 
 my $glomedics = GlomedicsApp->new(
