@@ -2,8 +2,7 @@
 
 package glomedicsController;
 use base 'CGI::Application';
-#use lib '/Users/Jordan/Sites/glomedics';
-use lib '/Library/WebServer/CGI-Executables/glomedics';
+use lib '/Users/Jordan/Sites/glomedics';
 
 use strict;
 use warnings;
@@ -20,15 +19,18 @@ sub setup {
 
 sub index {
 	my $self = shift;
-	my $tt_config = $self->param('tt_config');
-	my $tt = Template->new($tt_config);
-	$tt->process('index.tt2',
-	 	{
-			welcome => 'hello world!!!',
-		}
-	) || die $tt->error(), "\n";
 
-	return $tt;
+	my $config = {
+		PRE_PROCESS => 'header.tt2',
+		POST_PROCESS => 'footer.tt2',
+	};
+
+	my $vars = {
+		welcome => 'Hello world!!!',
+	};
+	
+	my $tt = Template->new($config);
+	$tt->process('index.tt2') || die $tt->error(), "\n";
 }
 
 1;
