@@ -1,19 +1,35 @@
 <html>
 	<head>
 		<title>[% title OR 'Glomedics' %]</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="mainStyles.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
 	</head>
 	<body> 
 		<header>
-			<h2>[% header OR 'Glomedics, inc.' %]</h2>
+			<div class="container">
+				<h2>[% header OR 'Global Diabetes Registry &amp; Exchange' %]<h2>
+				<h4><small>glomedics.org</small></h4>
+				<div class="row">
+				</div>
+			</div>
 		</header>
 
-		<section id="content">
+		<section class="content">
 			[% content %]
 		</section>
 
 		<footer>
-			<p>Copyright Glomedics, inc.</p>
+			<span><small>&copy;2013-2014 Glomedics, inc.</small></span>
 		</footer>
+
+
+		<!-- Jquery -->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<!-- Bootstrap -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>	
 	</body>
 </html>
