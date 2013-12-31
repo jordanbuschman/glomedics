@@ -1,8 +1,8 @@
 <html>
 	<head>
-    		<title>[% title OR 'Glomedics' %]</title>
-  	</head>
-  	<body> 
+		<title>[% title OR 'Glomedics' %]</title>
+	</head>
+	<body> 
 		<header>
 			<h2>[% welcome %]</h2>
 		</header>
