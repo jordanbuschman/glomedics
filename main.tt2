@@ -1,13 +1,16 @@
 <html>
 	<head>
 		<title>[% title OR 'Glomedics' %]</title>
+		<link rel="stylesheet" type="text/css" href="mainStyles.css">
 	</head>
 	<body> 
 		<header>
-			<h2>[% welcome %]</h2>
+			<h2>[% header OR 'Glomedics, inc.' %]</h2>
 		</header>
 
-		[% content %]
+		<section id="content">
+			[% content %]
+		</section>
 
 		<footer>
 			<p>Copyright Glomedics, inc.</p>
