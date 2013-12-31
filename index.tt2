@@ -1,1 +1,7 @@
+[% WRAPPER main.tt2
+	title = "Welcome"
+%]
+
 hello world!
+
+[% END %]

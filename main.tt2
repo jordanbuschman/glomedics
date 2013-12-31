@@ -1,0 +1,16 @@
+<html>
+	<head>
+    		<title>[% title OR 'Glomedics' %]</title>
+  	</head>
+  	<body> 
+		<header>
+			<h2>[% welcome %]</h2>
+		</header>
+
+		[% content %]
+
+		<footer>
+			<p>Copyright Glomedics, inc.</p>
+		</footer>
+	</body>
+</html>
