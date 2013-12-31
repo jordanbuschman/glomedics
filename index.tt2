@@ -1,5 +1,7 @@
 <html>
 	<body>
+		[% INLCUDE header.html %]
 		<p>Hopefully, this works</p>
+		[% INLCUDE footer.html %]
 	</body>
 </html>

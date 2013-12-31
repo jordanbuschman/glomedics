@@ -1,16 +1,10 @@
 #!/usr/bin/perl
 
-use lib "~/Library/WebServer/Documents/glomedics";
-use GlomedicsApp;
+package glomedics;
+use CGI::Carp qw( fatalsToBrowser warningsToBrowser );
+use glomedicsController;
 
-my $glomedics = GlomedicsApp->new(
-	PARAMS => {
-		tt_config => {
-			INCLUDE_PATH => ".",
-			PRE_PROCESS => 'header.html',
-			POST_PROCESS => 'footer.html',
-		},
-	},
-);
-
+my $glomedics = glomedicsController->new();
 $glomedics->run();
+
+1;
