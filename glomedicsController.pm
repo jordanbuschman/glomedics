@@ -21,12 +21,10 @@ sub index {
 
 	print "Content-type: text/html\n\n";
 
-	my $vars = {
-		welcome => 'Hello world!!!',
-	};
+	my $vars = {};
 	
 	my $tt = Template->new();
-	$tt->process('index.tt2') || die $tt->error(), "\n";
+	$tt->process('index.tt2', $vars) || die $tt->error(), "\n";
 
 	exit;
 }

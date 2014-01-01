@@ -1,5 +1,6 @@
 [% WRAPPER main.tt2
 	title = "Welcome"
+	active = "main"
 %]
 
 hello world!
